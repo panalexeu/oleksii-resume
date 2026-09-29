@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Oleksii Horchynskyi} \\ \vspace{1pt}
+    \small +38-095-024-2069 $|$ \href{mailto:oleksahorch@gmail.com}{\underline{oleksahorch@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/oleksiihorchynskyi}{\underline{linkedin.com/in/oleksiihorchynskyi/}} $|$
+    \href{https://github.com/panalexeu}{\underline{github.com/panalexeu}} $|$
+    \href{https://panalexeu.github.io/}{\underline{panalexeu.github.io}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Odesa National Polytechnic University}{Odesa, Ukraine}
+      {Bachelor in Computer Science}{Sep. 2021 -- June 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {RL Engineer}{Nov 2025 -- Jun 2026}
+      {Stealth Mode Startup}{San Francisco Bay Area (Remote)}
+      \resumeItemListStart
+        \resumeItem{Designed reinforcement learning environments with verifiable rewards for LLM training for a leading AI research lab}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ML Engineer (NLP)}{Apr 2025 -- Nov 2025}
+      {Techminder}{Remote}
+      \resumeItemListStart
+        \resumeItem{Sole ML (NLP) engineer in a small development team, communicating directly with clients to gather requirements and align solutions with business needs}
+        \resumeItem{Designed LLM chat experiences and integrated external data sources into client systems}
+        \resumeItem{Fine-tuned both open-source and OpenAI models}
+        \resumeItem{Built pipelines for visual reasoning and structured data extraction from documents}
+        \resumeItem{Clustered and organized messy language data}
+        \resumeItem{Deployed services on cloud platforms, including GCP and Render}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ML Engineer (NLP)}{Aug 2024 -- Apr 2025}
+      {Developish}{Remote}
+      \resumeItemListStart
+        \resumeItem{Sole ML (NLP) engineer in a small startup team within an accelerator}
+        \resumeItem{Designed an LLM chat experience, covering context management, integration of diverse data sources, tool calling, and prompt tuning}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{Dec 2023 -- May 2024}
+      {Provectus}{Odesa, Ukraine (Hybrid)}
+      \resumeItemListStart
+        \resumeItem{Explored and applied Retrieval-Augmented Generation (RAG), tool/function calling, chain-of-thought reasoning, and agentic workflows}
+        \resumeItem{Contributed to an existing RAG pipeline and helped develop a multi-source information retrieval system}
+        \resumeItem{Worked on deployment tasks using AWS cloud services}
+        \resumeItem{Presented project demos and technical progress updates to stakeholders}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{xlm-roberta-ua-distilled} $|$ \emph{Python, Hugging Face, Sentence Transformers, MTEB}}{Apr 2025}
+          \resumeItemListStart
+            \resumeItem{Developed and open-sourced a distilled multilingual embedding model for Ukrainian and English, ranking higher than OpenAI's text-embedding-3-small on the MTEB leaderboard}
+            \resumeItem{Trained on 500k+ sentence pairs and benchmarked on standard cross-lingual semantic similarity tasks}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{horchunk} $|$ \emph{Python, RAG, Splitting Methods}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{Designed and open-sourced a dynamic sliding-window text chunking algorithm for semantic segmentation, tunable by cosine similarity threshold}
+            \resumeItem{Published as a research paper co-authored with my professor}
+            \resumeItem{Achieved top scores in the Chunking Evaluation Framework (10.3 IoU, 48.4 Precision at $t = 0.72$), outperforming standard chunkers}
+            \resumeItem{Implemented binary search-based threshold tuning with human-in-the-loop optimization}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Classic Paper Reproductions} $|$ \emph{Python, PyTorch}}{July 2026}
+          \resumeItemListStart
+            \resumeItem{\textbf{nanocnn}: PyTorch reproduction of ``Backpropagation Applied to Handwritten Zip Code Recognition'' (LeCun et al., 1989)}
+            \resumeItem{\textbf{nanonplm}: PyTorch reproduction of ``A Neural Probabilistic Language Model'' (Bengio et al., 2003)}
+            \resumeItem{Wrote blog posts explaining both papers and their implementations}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python} \\
+     \textbf{Frameworks}{: Transformers, Sentence Transformers, PyTorch, JAX, LangChain, LlamaIndex, FastAPI, ChromaDB } \\
+     \textbf{Developer Tools}{: Git, Docker, AWS, GCP, Render, vllm, vllm-tpu} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
